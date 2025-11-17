@@ -4,10 +4,10 @@
 | -------------- | ----------------------------------------------------------------------------------------------- |
 | Type           | Process                                                                                         |
 | Status         | Draft                                                                                           |
-| Author(s)      | @oursland                                                                                       |
+| Author(s)      | @oursland, @chennes                                                                             |
 | Version        | 0.1                                                                                             |
 | Created        | 2025-06-24                                                                                      |
-| Updated        | 2025-06-24                                                                                      |
+| Updated        | 2025-11-16                                                                                      |
 | Discussion     |                                                                                                 |
 | Implementation |                                                                                                 |
 
@@ -34,6 +34,18 @@ It is proposed that:
 * a feature release is designated as an LTS release annually
 
 The following plot depicts the automated branching schedule and milestone releases:
+
+```mermaid
+gitGraph
+    title Release Schedule
+    commit id:"1"
+    commit id:"2"
+    commit id:"3"
+    branch releases/FreeCAD-2026.1
+    checkout main
+    commit id:"4"
+    checkout releases/FreeCAD-2026.1
+    commit id:"backport-4"
 
 ```mermaid
 gantt
